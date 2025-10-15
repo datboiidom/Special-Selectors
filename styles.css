@@ -1,10 +1,29 @@
 li:hover {
-    background-color: gold;
+    background-color: silver;
     font-size: 30px;
     cursor: pointer;
 }
 
 li:active {
-    background-color: silver;
+    background-color: gold;
     font-style: italic;
+}
+
+li::before {
+    content: "❌";
+}
+
+li:hover::after {
+    content:"vote for me!!!";
+    margin-left: 12px;
+    font-weight: bold;
+    color: brown;
+}
+
+li:active::before {
+    content: "☑";
+}
+
+ul {
+    list-style: none;
 }
